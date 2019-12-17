@@ -15,4 +15,4 @@ def edit(request):
 
 
 def lock(request):
-    pass
+    return HttpResponse(f'You got to the page {str(request.path)} </br> It is "Lock" in "News" page ')
