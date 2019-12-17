@@ -7,7 +7,7 @@ def base(request):
 
 
 def new(request):
-    pass
+    return HttpResponse(f'You got to the page {str(request.path)} </br> It is "New" in "News" page ')
 
 
 def edit(request):
