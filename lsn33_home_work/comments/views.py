@@ -5,16 +5,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def base(request):
-    return HttpResponse('')
+    return HttpResponse(f'You got to the page {str(request.path)} </br> It is "Comments" base page')
 
 
-def nnsss(request):
-    return HttpResponse('')
-
-
-def n_s_n(request):
-    return HttpResponse('')
-
-
-def phone(request):
-    return HttpResponse('')
+def any_right(request, page):
+    return HttpResponse(f'You got to the page {str(request.path)} </br> It is "{page}" page ')
