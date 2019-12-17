@@ -11,7 +11,7 @@ def new(request):
 
 
 def edit(request):
-    pass
+    return HttpResponse(f'You got to the page {str(request.path)} </br> It is "Edit" in "News" page ')
 
 
 def lock(request):
