@@ -2,17 +2,17 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def base():
+def base(request):
+    return HttpResponse(f'You got to the page {str(request.path)} </br> It is "News" base page ')
+
+
+def new(request):
     pass
 
 
-def new():
+def edit(request):
     pass
 
 
-def edit():
-    pass
-
-
-def lock():
+def lock(request):
     pass
